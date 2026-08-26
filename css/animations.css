@@ -1,0 +1,33 @@
+/* ============================================
+   CyberSafe — Animations
+   ============================================ */
+
+@keyframes scan{
+  0%   { top: 0%; }
+  50%  { top: 100%; }
+  100% { top: 0%; }
+}
+
+@keyframes fadeUp{
+  from{ opacity:0; transform: translateY(10px); }
+  to{ opacity:1; transform: translateY(0); }
+}
+
+.fade-up{ animation: fadeUp 0.5s ease both; }
+
+@keyframes pulseDot{
+  0%,100%{ opacity:1; }
+  50%{ opacity:0.35; }
+}
+.status-dot{ animation: pulseDot 2.4s ease-in-out infinite; }
+
+@keyframes toastIn{
+  from{ opacity:0; transform: translateY(14px); }
+  to{ opacity:1; transform: translateY(0); }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  .scanner-line{ animation: none; top:50%; }
+}

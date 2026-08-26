@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — CyberSafe</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="status-bar">
+  <div class="container">
+    <span><span class="status-dot"></span>SYSTEM STATUS: ONLINE</span>
+    <span>MODULE: CONTACT</span>
+    <span>RESPONSE TIME: 1–2 BUSINESS DAYS</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><span class="brand-mark">CS</span>CyberSafe</a>
+    <button class="nav-toggle">MENU ▾</button>
+    <ul class="nav-tabs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="threats.html">Threats</a></li>
+      <li><a href="password-checker.html">Password Check</a></li>
+      <li><a href="phishing.html">Phishing Test</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="tips.html">Tips</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container" style="max-width:520px;">
+      <div class="section-head">
+        <span class="eyebrow">Get in Touch</span>
+        <h1>Contact CyberSafe</h1>
+        <p>Have a question, found an issue, or want to suggest a new threat topic? Send a message below (this demo form does not send data anywhere).</p>
+      </div>
+      <div class="hud-frame">
+        <span class="hf-tr"></span><span class="hf-bl"></span>
+        <form id="contact-form" onsubmit="event.preventDefault(); CyberSafe.toast('Message sent (demo only)'); this.reset();">
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" required>
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" required>
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn" style="width:100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>&copy; <span data-year></span> CyberSafe — Cybersecurity Awareness &amp; Learning Platform.</p>
+    <ul class="footer-links">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="admin.html">Admin Panel</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* ============================================
+   CyberSafe — Responsive rules
+   ============================================ */
+
+@media (max-width: 1024px){
+  .hero .container{ grid-template-columns: 1fr; }
+  .scanner{ max-width: 420px; margin: 0 auto; }
+  .grid-4{ grid-template-columns: repeat(2,1fr); }
+  .grid-3{ grid-template-columns: repeat(2,1fr); }
+}
+
+@media (max-width: 860px){
+  .nav-wrap{ flex-wrap: wrap; }
+  .nav-toggle{
+    display:inline-flex; margin-left:auto; background:none; border:1px solid var(--border);
+    color: var(--text); font-family: var(--font-mono); padding:8px 12px; cursor:pointer;
+  }
+  .nav-tabs{
+    display:none; width:100%; flex-direction:column; gap:0; order: 3;
+    border-top: 1px solid var(--border-soft); margin-top: 10px; padding-top: 8px;
+  }
+  .nav-tabs.open{ display:flex; }
+  .nav-tabs a{ border-radius:0; padding: 10px 4px; }
+  .nav-tabs a.active{ border-bottom: none; border-left: 2px solid var(--amber); padding-left: 10px; }
+}
+
+@media (max-width: 720px){
+  .grid-2{ grid-template-columns: 1fr; }
+  .grid-3{ grid-template-columns: 1fr; }
+  .grid-4{ grid-template-columns: repeat(2,1fr); }
+  .pw-checks{ grid-template-columns: 1fr; }
+  .phish-choices{ flex-direction: column; }
+  .footer-grid{ flex-direction: column; }
+}
+
+@media (max-width: 480px){
+  .grid-4{ grid-template-columns: 1fr; }
+  .hero{ padding: 3rem 0 2rem; }
+  .hero-actions{ flex-direction: column; }
+  .btn{ width:100%; }
+  .quiz-nav{ flex-direction: column; gap:10px; }
+  .quiz-nav .btn{ width:100%; }
+}

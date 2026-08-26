@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — CyberSafe</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="status-bar">
+  <div class="container">
+    <span><span class="status-dot"></span>SYSTEM STATUS: ONLINE</span>
+    <span>MODULE: LEARNER DASHBOARD</span>
+    <span>DATA SOURCE: LOCAL STORAGE</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><span class="brand-mark">CS</span>CyberSafe</a>
+    <button class="nav-toggle">MENU ▾</button>
+    <ul class="nav-tabs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="threats.html">Threats</a></li>
+      <li><a href="password-checker.html">Password Check</a></li>
+      <li><a href="phishing.html">Phishing Test</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="tips.html">Tips</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Progress Report</span>
+        <h1>Welcome back, <span id="dash-user" class="mono" style="color:var(--amber);">—</span></h1>
+        <p>Your learning progress across every CyberSafe module, tracked automatically as you complete activities.</p>
+      </div>
+
+      <div class="hud-frame" style="margin-bottom:2rem;">
+        <span class="hf-tr"></span><span class="hf-bl"></span>
+        <div class="stat-label">Overall Security Readiness</div>
+        <div class="stat-num" id="dash-overall-num">0%</div>
+        <div class="dash-bar-track"><div class="dash-bar-fill" id="dash-overall-bar" style="width:0%;"></div></div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Threat Topics Completed</h3>
+          <div class="stat-num" id="dash-topics-num" style="font-size:1.6rem;">0/8</div>
+          <div class="dash-bar-track" style="margin-top:0.6rem;"><div class="dash-bar-fill" id="dash-topics-bar" style="width:0%;"></div></div>
+          <p style="margin-top:0.8rem;"><a href="threats.html">Continue reading threat briefings &rarr;</a></p>
+        </div>
+        <div class="card">
+          <h3>Cybersecurity Quiz</h3>
+          <div class="stat-num" id="dash-quiz-num" style="font-size:1.6rem;">Not attempted</div>
+          <div class="dash-bar-track" style="margin-top:0.6rem;"><div class="dash-bar-fill" id="dash-quiz-bar" style="width:0%;"></div></div>
+          <p style="margin-top:0.8rem;"><a href="quiz.html">Take the quiz &rarr;</a></p>
+        </div>
+        <div class="card">
+          <h3>Security Tips Viewed</h3>
+          <div class="stat-num" id="dash-tips-num" style="font-size:1.6rem;">0/12</div>
+          <div class="dash-bar-track" style="margin-top:0.6rem;"><div class="dash-bar-fill" id="dash-tips-bar" style="width:0%;"></div></div>
+          <p style="margin-top:0.8rem;"><a href="tips.html">See a new tip &rarr;</a></p>
+        </div>
+        <div class="card">
+          <h3>Phishing Challenge</h3>
+          <div class="stat-num" id="dash-phish-num" style="font-size:1.6rem;">Not attempted</div>
+          <div class="dash-bar-track" style="margin-top:0.6rem;"><div class="dash-bar-fill" id="dash-phish-bar" style="width:0%;"></div></div>
+          <p style="margin-top:0.8rem;"><a href="phishing.html">Run the drill &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>&copy; <span data-year></span> CyberSafe — Cybersecurity Awareness &amp; Learning Platform.</p>
+    <ul class="footer-links">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="admin.html">Admin Panel</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/threats.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

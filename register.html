@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — CyberSafe</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="status-bar">
+  <div class="container">
+    <span><span class="status-dot"></span>SYSTEM STATUS: ONLINE</span>
+    <span>MODULE: PROFILE REGISTRATION</span>
+    <span>DATA STORED LOCALLY ON THIS DEVICE ONLY</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><span class="brand-mark">CS</span>CyberSafe</a>
+    <button class="nav-toggle">MENU ▾</button>
+    <ul class="nav-tabs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="threats.html">Threats</a></li>
+      <li><a href="password-checker.html">Password Check</a></li>
+      <li><a href="phishing.html">Phishing Test</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="tips.html">Tips</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container" style="max-width:520px;">
+      <div class="section-head">
+        <span class="eyebrow">New Profile</span>
+        <h1>Create Your Learner Profile</h1>
+        <p>Your name shows up on the Dashboard so your progress feels like yours. Everything stays in this browser — nothing is sent anywhere.</p>
+      </div>
+
+      <div class="hud-frame">
+        <span class="hf-tr"></span><span class="hf-bl"></span>
+
+        <div id="register-success" class="card" style="display:none; border-color: var(--green); margin-bottom:1.2rem;">
+          <strong style="color:var(--green);">Registration successful.</strong>
+          <p style="margin-top:0.4rem;">Your profile has been created for this browser. <a href="dashboard.html">Go to your Dashboard &rarr;</a></p>
+        </div>
+
+        <form id="register-form" novalidate>
+          <div class="field">
+            <label for="reg-name">Full Name</label>
+            <input type="text" id="reg-name" autocomplete="name">
+            <div class="field-error"></div>
+          </div>
+          <div class="field">
+            <label for="reg-email">Email</label>
+            <input type="email" id="reg-email" autocomplete="email">
+            <div class="field-error"></div>
+          </div>
+          <div class="field">
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" autocomplete="new-password">
+            <div class="pw-meter"><div class="pw-meter-fill" id="pw-reg-meter-fill"></div></div>
+            <div class="field-error"></div>
+          </div>
+          <div class="field">
+            <label for="reg-confirm">Confirm Password</label>
+            <input type="password" id="reg-confirm" autocomplete="new-password">
+            <div class="field-error"></div>
+          </div>
+          <button type="submit" class="btn" style="width:100%;">Create Profile</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>&copy; <span data-year></span> CyberSafe — Cybersecurity Awareness &amp; Learning Platform.</p>
+    <ul class="footer-links">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="admin.html">Admin Panel</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/password.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

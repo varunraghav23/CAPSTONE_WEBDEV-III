@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel — CyberSafe</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="status-bar">
+  <div class="container">
+    <span><span class="status-dot"></span>SYSTEM STATUS: ONLINE</span>
+    <span>MODULE: THREAT MANAGEMENT (CRUD)</span>
+    <span>ACCESS LEVEL: ADMINISTRATOR</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><span class="brand-mark">CS</span>CyberSafe</a>
+    <button class="nav-toggle">MENU ▾</button>
+    <ul class="nav-tabs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="threats.html">Threats</a></li>
+      <li><a href="password-checker.html">Password Check</a></li>
+      <li><a href="phishing.html">Phishing Test</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="tips.html">Tips</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Restricted Area</span>
+        <h1>Threat Management Panel</h1>
+        <p>Create, edit, and remove threat records shown in the Threat Awareness module. Changes are saved to this browser's Local Storage and immediately reflected on the public site.</p>
+      </div>
+
+      <div class="admin-form hud-frame" id="admin-form-wrap">
+        <span class="hf-tr"></span><span class="hf-bl"></span>
+        <h3 id="admin-form-title">Add New Threat</h3>
+        <form id="admin-form">
+          <div class="grid grid-2">
+            <div class="field">
+              <label for="f-code">Threat Code</label>
+              <input type="text" id="f-code" placeholder="e.g. QR" maxlength="6" required>
+            </div>
+            <div class="field">
+              <label for="f-risk">Risk Level</label>
+              <select id="f-risk">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-name">Threat Name</label>
+            <input type="text" id="f-name" placeholder="e.g. QR Code Phishing" required>
+          </div>
+          <div class="field">
+            <label for="f-category">Category</label>
+            <input type="text" id="f-category" placeholder="e.g. Email Attack" required>
+          </div>
+          <div class="field">
+            <label for="f-what">Description (What is it?)</label>
+            <textarea id="f-what" rows="3" required></textarea>
+          </div>
+          <div class="field">
+            <label for="f-prevention">Prevention tips (one per line)</label>
+            <textarea id="f-prevention" rows="4" placeholder="Scan QR codes only from trusted sources&#10;Preview the URL before opening it"></textarea>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <button type="submit" class="btn" id="admin-submit-btn">Add Threat</button>
+            <button type="button" class="btn btn-outline" id="admin-cancel-btn" style="display:none;">Cancel Edit</button>
+          </div>
+        </form>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.8rem; flex-wrap:wrap; gap:10px;">
+        <span class="quiz-progress" id="admin-count"></span>
+        <button class="btn btn-outline btn-sm" id="admin-reset-data">Reset to Default Data</button>
+      </div>
+
+      <div class="hud-frame" style="overflow-x:auto;">
+        <span class="hf-tr"></span><span class="hf-bl"></span>
+        <table>
+          <thead>
+            <tr><th>Code</th><th>Name</th><th>Category</th><th>Risk</th><th>Actions</th></tr>
+          </thead>
+          <tbody id="admin-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>&copy; <span data-year></span> CyberSafe — Cybersecurity Awareness &amp; Learning Platform.</p>
+    <ul class="footer-links">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="admin.html">Admin Panel</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/threats.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

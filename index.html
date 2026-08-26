@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberSafe — Cybersecurity Awareness & Learning Platform</title>
+<meta name="description" content="Learn to identify phishing, malware, and online scams. Test your password strength, take the security quiz, and build safer online habits.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="status-bar">
+  <div class="container">
+    <span><span class="status-dot"></span>SYSTEM STATUS: ONLINE</span>
+    <span>THREAT LEVEL TODAY: <span style="color:var(--amber)">ELEVATED</span></span>
+    <span>SESSION: LOCAL &nbsp;|&nbsp; NO DATA LEAVES YOUR BROWSER</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><span class="brand-mark">CS</span>CyberSafe</a>
+    <button class="nav-toggle">MENU ▾</button>
+    <ul class="nav-tabs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="threats.html">Threats</a></li>
+      <li><a href="password-checker.html">Password Check</a></li>
+      <li><a href="phishing.html">Phishing Test</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="tips.html">Tips</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="fade-up">
+        <span class="eyebrow">Case File: 00 / Briefing</span>
+        <h1>Learn to spot the threat before it clicks you.</h1>
+        <p style="font-size:1.05rem;">CyberSafe is an interactive briefing room for everyday internet users — explore real attack patterns, test your passwords, run a live phishing drill, and track your own security readiness.</p>
+        <div class="hero-actions">
+          <a href="threats.html" class="btn">Start Threat Briefing</a>
+          <a href="quiz.html" class="btn btn-outline">Take the Quiz</a>
+        </div>
+      </div>
+      <div class="scanner hud-frame fade-up" aria-hidden="true">
+        <span class="hf-tr"></span><span class="hf-bl"></span>
+        <div class="scanner-grid"></div>
+        <div class="scanner-line"></div>
+        <div class="scanner-icons" id="scanner-icons">
+          <span>PHI</span><span>MAL</span><span>RAN</span>
+          <span>SOC</span><span>PWD</span><span>IDT</span>
+          <span>SCM</span><span>WFI</span><span>???</span>
+        </div>
+        <div class="scanner-readout">
+          <span>SCANNING KNOWN VECTORS</span>
+          <span><b>8</b> CATALOGUED</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid grid-4">
+        <div class="card stat-card">
+          <div class="stat-num">8</div>
+          <div class="stat-label">Threat Types Covered</div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-num">10</div>
+          <div class="stat-label">Quiz Questions</div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-num">8</div>
+          <div class="stat-label">Phishing Test Cases</div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-num">12</div>
+          <div class="stat-label">Daily Security Tips</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Modules</span>
+        <h2>Everything you need to build safer habits</h2>
+        <p>Six core modules, each focused on a different skill — from recognizing a threat to proving you can spot one.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card hud-frame">
+          <span class="hf-tr"></span><span class="hf-bl"></span>
+          <span class="threat-icon">01</span>
+          <h3>Threat Awareness</h3>
+          <p>Deep-dive briefings on phishing, malware, ransomware, and five other common threats — including real-world examples.</p>
+          <a href="threats.html">Open briefing &rarr;</a>
+        </div>
+        <div class="card hud-frame">
+          <span class="hf-tr"></span><span class="hf-bl"></span>
+          <span class="threat-icon">02</span>
+          <h3>Password Strength Checker</h3>
+          <p>Enter a password and get instant feedback on length, character variety, and overall strength.</p>
+          <a href="password-checker.html">Check a password &rarr;</a>
+        </div>
+        <div class="card hud-frame">
+          <span class="hf-tr"></span><span class="hf-bl"></span>
+          <span class="threat-icon">03</span>
+          <h3>Phishing Detection Challenge</h3>
+          <p>Classify real-looking messages as Safe, Suspicious, or Phishing, and learn what gave each one away.</p>
+          <a href="phishing.html">Start the drill &rarr;</a>
+        </div>
+        <div class="card hud-frame">
+          <span class="hf-tr"></span><span class="hf-bl"></span>
+          <span class="threat-icon">04</span>
+          <h3>Cybersecurity Quiz</h3>
+          <p>Ten multiple-choice questions with instant feedback, a progress bar, and a final score breakdown.</p>
+          <a href="quiz.html">Take the quiz &rarr;</a>
+        </div>
+        <div class="card hud-frame">
+          <span class="hf-tr"></span><span class="hf-bl"></span>
+          <span class="threat-icon">05</span>
+          <h3>Daily Security Tips</h3>
+          <p>Bite-sized habits you can adopt today, one tip at a time.</p>
+          <a href="tips.html">See a tip &rarr;</a>
+        </div>
+        <div class="card hud-frame">
+          <span class="hf-tr"></span><span class="hf-bl"></span>
+          <span class="threat-icon">06</span>
+          <h3>Learning Dashboard</h3>
+          <p>Track topics completed, quiz score, tips viewed, and your overall security-readiness progress.</p>
+          <a href="dashboard.html">View dashboard &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container" style="text-align:center;">
+      <h2>Ready to test what you know?</h2>
+      <p style="max-width:520px;margin:0 auto 1.4rem;">Create a free local profile to track your progress across every module on this device.</p>
+      <a href="register.html" class="btn btn-cyan">Create Your Profile</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>&copy; <span data-year></span> CyberSafe — Cybersecurity Awareness &amp; Learning Platform. Built with HTML, CSS &amp; JavaScript.</p>
+    <ul class="footer-links">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="admin.html">Admin Panel</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+  // Reveal scanner icons in sequence to sell the "scanning" moment once on load
+  document.addEventListener("DOMContentLoaded", () => {
+    const icons = document.querySelectorAll("#scanner-icons span");
+    icons.forEach((el, i) => {
+      setTimeout(() => el.classList.add("revealed"), 300 + i * 220);
+    });
+  });
+</script>
+</body>
+</html>
